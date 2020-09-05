@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Home Page </title>
+    <link rel="stylesheet" href="psystyles.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- fa-fa -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+  </head>
+
+
+  <body>
+
+   
+
+    
+    <!-- navbar -->
+    <div class ="header">
+      <nav class="nav-wrapper transparent">
+        <div class="container">
+          <a href="" class="brand-logo">PsySite</a>
+          <a href="" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li> <a href="#" class = "gray-text left">Home</a></li>
+            <li><a href="#" class="gray-text modal-trigger right" data-target = "modal-account">Account Details</a></li>
+            <li><a href="#" class = "gray-text" id = "logout"> Log Out</a></li>
+            <li><a href="#" class="gray-text modal-trigger " data-target="modal-login">Login</a></li>
+            <li><a href="#" class="gray-text modal-trigger " data-target ="modal-signup"> Sign Up</a></li>
+          </ul>
+          <ul class="sidenav grey lighten-3" id = "mobile-menu">
+            <li> <a href="#" class = "gray-text">Home</a></li>
+            <li><a href="#" class = "gray-text" id = "logout"> Log Out</a></li>
+            <li><a href="#" class="gray-text modal-trigger " data-target="modal-login">Login</a></li>
+            <li><a href="#" class="gray-text modal-trigger " data-target ="modal-signup"> Sign Up</a></li>
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- navbar -->
+
+
+    <!-- photo / grid -->
+    <section class="container section" id = "photo's">
+      <div class="row">
+        <div class="col s12 l4">
+          <img src="assets/air-balloons.jpg" alt="" class="responsive-img materialboxed ">
+        </div>
+        <div class="col s12 l6 offset-l1">
+          <h2 class="indigo-text text-darken-4">Portraits
+          </h2>
+          <p>This is about a psychology site.It is designed for everyone and psychologists can make the therapies here.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l4 push-l7 offset-l1">
+          <img src="assets/freud2.png" alt="" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 l6 pull-l5 right-align offset-l1">
+          <h2 class="indigo-text text-darken-4">Freud
+          </h2>
+          <p>This is about a psychology site.It is designed for everyone and psychologists can make the therapies here.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- parallax -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="assets/freud2.png" alt="" class="responsive-img">
+      </div>
+    </div>
+    <!-- services / tabs -->
+    <section class="container section" id= "Services">
+      <div class="row">
+        <div class="col s12 l4">
+          <h2 class="indigo-text text-darken-4"> About Us</h2>
+          <p>The explanation about us</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+        </div>
+        <div class="col s12 l6 offset-l1">
+
+          <div class="service-box">
+            <div class="service-icon yellowbox">
+              <div class="front-content">
+                <i class="material-icons" aria-hidden="true">language</i>
+                <h3>Family Travel</h3>
+              </div>
+            </div>
+            <div class="service-content">
+              <h3>Family Travel</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon orangebox">
+              <div class="front-content">
+                <i class="material-icons">verified_user</i>
+                <h3>Camping</h3>
+              </div>
+            </div>
+            <div class="service-content">
+              <h3>Camping</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- parallax -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="assets/paral.jpg" alt="" class="responsive-img">
+      </div>
+    </div>
+    <!--Associates Cards-->
+    <section>
+      <div class = "container">
+        <div class="block-heading">
+          <h2>Team</h2>
+        </div>
+        <div class = "row">
+          <div class = "cardColumn">
+            <div class="card">
+              <img src="assets/img_avatar.png" alt="Avatar" style="width:100%">
+              <div class="card-container">
+                <h4><b>John Doe</b></h4> 
+                <p>Architect & Engineer</p> 
+              </div>
+            </div>
+          </div>
+
+          <div class = "cardColumn">
+            <div class="card">
+              <img src="assets/img_avatar.png" alt="Avatar" style="width:100%">
+              <div class="card-container">
+                <h4><b>John Doe</b></h4> 
+                <p>Architect & Engineer</p> 
+              </div>
+            </div>
+          </div>
+
+          <div class = "cardColumn">
+            <div class="card">
+              <img src="assets/img_avatar2.png" alt="Avatar" style="width:100%">
+              <div class="card-container">
+                <h4><b>June Doe</b></h4> 
+                <p>Architect & Engineer</p> 
+              </div>
+            </div>
+          </div>
+
+          <div class = "cardColumn">
+            <div class="card">
+              <img src="assets/img_avatar2.png" alt="Avatar" style="width:100%">
+              <div class="card-container">
+                <h4><b>Jessica Doe</b></h4> 
+                <p>Architect & Engineer</p>
+  
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+     <!-- parallax -->
+     <div class="parallax-container">
+      <div class="parallax">
+        <img src="assets/paralblue.jpg" alt="" class="responsive-img">
+      </div>
+    </div>
+    <!-- contact form -->
+    <section class="section container" id = "contact">
+      <div class="row">
+        <div class="col s12 l5">
+          <h2 class="indigo-text text-darken-4">Contact Us</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+        </div>
+        <div class="col s12 l5 offset-l2">
+          <form action="">
+            <div class="input-field">
+              <i class="material-icons prefix">email</i>
+              <input type="email" id= "email">
+              <label for="email">Your Email</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">message</i>
+              <textarea id="message" class = "materialize-textarea" cols="40" rows="10"></textarea>
+              <label for="message"> Your Message</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix"> today</i>
+              <input type="text" id= "date" class="datepicker">
+              <label for="date"> Choose a date </label>
+            </div>
+            <div class="input-field">
+              <p>Services Required</p>
+              <p>
+                <label>
+                  <input type="checkbox">
+                  <span>Photographer</span>
+              </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox">
+                  <span>Edit</span>
+              </label>
+              </p>
+            </div>
+            <div class="input-field center ">
+              <button class="btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="page-footer grey darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 l6">
+            <h5>About</h5>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+          </div>
+          <div class="col s12 l4 offset-l2">
+            <h2>Connect Us</h2>
+            <li>
+              <a href="" class="grey-text text-lighten-3"> Facebook </a> 
+              <a href="#" class="pl-0 pr-3"><span class="fa fa-facebook"></span></a>
+           </li>
+           <li>
+            <a href="" class="grey-text text-lighten-3"> Twitter </a> 
+            <a href="#" class="pl-0 pr-3"><span class="fa fa-twitter"></span></a>
+          </li>
+          <li>
+            <a href="" class="grey-text text-lighten-3"> LinkedIn </a> 
+            <a href="#" class="pl-0 pr-3"><span class="fa fa-linkedin"></span></a>
+          </li>
+          <li>
+            <a href="" class="grey-text text-lighten-3"> GitHub </a> 
+            <a href="#" class="pl-0 pr-3"><span class="fa fa-github"></span></a>
+         </li>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright grey darken-4">
+        <div class="container center-align"> PsySite</div>
+      </div>
+    </footer>
+
+  
+   
+    <!-- SIGN UP MODAL -->
+    <div id="modal-signup" class="modal">
+      <div class="modal-content">
+        <h4>Sign up</h4><br />
+        <form id="signup-form">
+          <div class="input-field">
+            <input type="email" id="signup-email" required />
+            <label for="signup-email">Email address</label>
+          </div>
+          <div class="input-field">
+            <input type="password" id="signup-password" required />
+            <label for="signup-password">Choose password</label>
+          </div>
+          <button class="btn blue z-depth-0">Sign up</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- LOGIN MODAL -->
+    <div id="modal-login" class="modal">
+      <div class="modal-content">
+        <h4>Login</h4><br />
+        <form id="login-form">
+          <div class="input-field">
+            <input type="email" id="login-email" required />
+            <label for="login-email">Email address</label>
+          </div>
+          <div class="input-field">
+            <input type="password" id="login-password" required />
+            <label for="login-password">Your password</label>
+          </div>
+          <button class="btn blue  z-depth-0">Login</button>
+          <button  onclick = "googleLogin()"class = "btn purple"> Google Login</button>
+        </form>
+      </div>
+    </div>
+
+     <!-- ACCOUNT MODAL -->
+    <div id="modal-account" class="modal">
+      <div class="modal-content center-align">
+        <h4>Account details</h4><br />
+        <div class="account-details"></div>
+      </div>
+    </div>
+
+  
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBhLYrV3DtA_8bk3kn7nEtNUbtk0SR0mhQ",
+    authDomain: "psychologyprototype-d2930.firebaseapp.com",
+    databaseURL: "https://psychologyprototype-d2930.firebaseio.com",
+    projectId: "psychologyprototype-d2930",
+    storageBucket: "psychologyprototype-d2930.appspot.com",
+    messagingSenderId: "56440645435",
+    appId: "1:56440645435:web:fde1b2f9fff9a0a20c391e",
+    measurementId: "G-3ZW2081Y1J"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  //auth
+  const authent = firebase.auth();
+  const db = firebase.firestore();
+
+  
+
+  
+</script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="scripts/authent.js"></script>
+  <script src="scripts/popup.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.datepicker').datepicker({
+        disableWeekends: true
+      });
+    });
+  </script>
+  </body>
+
+</html>
