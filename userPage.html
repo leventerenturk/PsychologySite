@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> User Page </title>
+    
+    <link rel="stylesheet" href="psystyles.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- fa-fa -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+
+
+
+
+  <body>
+    <!--NAVBAR-->
+      <nav class="nav-wrapper blue lighten-1">
+        <div class="container">
+          <a href="" class="brand-logo">PsySite</a>
+          <a href="" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li> <a href="#" class = "gray-text left">Home</a></li>
+            <li><a href="#" class="gray-text modal-trigger right" data-target = "modal-account">Account Details</a></li>
+            <li><a href="#" class = "gray-text" id = "logout"> Log Out</a></li>
+          </ul>
+          <ul class="sidenav grey lighten-3" id = "mobile-menu">
+            <li><a href="#" class = "gray-text" id = "logout"> Log Out</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+  
+
+
+  
+    
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="scripts/authent.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+  </script>
+  <script>
+
+  </script>
+  </body>
+</html>

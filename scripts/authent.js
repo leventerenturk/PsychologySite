@@ -53,6 +53,7 @@ logout.addEventListener('click', (e) => {
     authent.signOut().then(() => {
         window.alert('User has signed out');
         console.log("User has signed Out");
+        //window.location = 'introPage.html';
     });
 });
 

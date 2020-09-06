@@ -1,16 +1,49 @@
-[debug] [2020-09-05T07:58:30.578Z] ----------------------------------------------------------------------
-[debug] [2020-09-05T07:58:30.580Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\EGE\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2020-09-05T07:58:30.580Z] CLI Version:   8.1.1
-[debug] [2020-09-05T07:58:30.580Z] Platform:      win32
-[debug] [2020-09-05T07:58:30.580Z] Node Version:  v12.4.0
-[debug] [2020-09-05T07:58:30.582Z] Time:          Sat Sep 05 2020 10:58:30 GMT+0300 (GMT+03:00)
-[debug] [2020-09-05T07:58:30.582Z] ----------------------------------------------------------------------
-[debug] [2020-09-05T07:58:30.582Z] 
-[debug] [2020-09-05T07:58:30.592Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-09-05T07:58:30.622Z] Error: Could not load the default credentials. Browse to https://cloud.google.com/docs/authentication/getting-started for more information.
-    at GoogleAuth.getApplicationDefaultAsync (C:\Users\EGE\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\google-auth-library\build\src\auth\googleauth.js:160:19)
-    at processTicksAndRejections (internal/process/task_queues.js:89:5)
-    at async GoogleAuth.getClient (C:\Users\EGE\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\google-auth-library\build\src\auth\googleauth.js:502:17)
-    at async GoogleAuth.getAccessToken (C:\Users\EGE\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\google-auth-library\build\src\auth\googleauth.js:524:24)
-[error] 
-[error] Error: An unexpected error has occurred.
+[debug] [2020-09-06T13:31:31.015Z] ----------------------------------------------------------------------
+[debug] [2020-09-06T13:31:31.017Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\EGE\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-09-06T13:31:31.018Z] CLI Version:   8.1.1
+[debug] [2020-09-06T13:31:31.018Z] Platform:      win32
+[debug] [2020-09-06T13:31:31.018Z] Node Version:  v12.4.0
+[debug] [2020-09-06T13:31:31.019Z] Time:          Sun Sep 06 2020 16:31:31 GMT+0300 (GMT+03:00)
+[debug] [2020-09-06T13:31:31.019Z] ----------------------------------------------------------------------
+[debug] [2020-09-06T13:31:31.019Z] 
+[debug] [2020-09-06T13:31:31.026Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-06T13:31:31.027Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\EGE\Desktop\Websites\psySite
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using psychologyprototype-d2930.
+[debug] [2020-09-06T13:31:39.041Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/psychologyprototype-d2930  
+ 
+[debug] [2020-09-06T13:31:39.528Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 06 Sep 2020 13:31:38 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Firestore Setup
+[debug] [2020-09-06T13:31:39.530Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-06T13:31:39.531Z] > authorizing via signed-in user
+[debug] [2020-09-06T13:31:39.531Z] [iam] checking project psychologyprototype-d2930 for permissions ["firebase.projects.get"]
+[debug] [2020-09-06T13:31:39.532Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/psychologyprototype-d2930:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-09-06T13:31:40.867Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 06 Sep 2020 13:31:39 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=869","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
