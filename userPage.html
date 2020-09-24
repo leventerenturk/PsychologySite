@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> User Page </title>
     
-    <link rel="stylesheet" href="psystyles.css">
+    <link rel="stylesheet" href="usrstyles.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!--Import Google Icon Font-->
@@ -16,6 +16,25 @@
     <!-- fa-fa -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--FLAG ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css">
+    
+    <style>
+      .section{
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+      }
+      .tabs .indicator{
+        background-color: #1a237e;
+      }
+      .tabs .tab a:focus, .tabs .tab a:focus.active{
+         background: transparent;
+      }
+      .user-dropdown{
+          width:300px;
+      }
+    </style>
+    
   </head>
 
 
@@ -23,22 +42,122 @@
 
   <body>
     <!--NAVBAR-->
+    <div class ="header">
       <nav class="nav-wrapper blue lighten-1">
+        <a href="" class="sidenav-trigger show-on-large " data-target="mobile-menu">
+          <i class="material-icons">person</i>
+        </a>
+        <a href="" class="sidenav-trigger right">
+          <i class="material-icons">view_module</i>
+        </a>
+        <a href="" class="sidenav-trigger right">
+          <i class="material-icons">search</i>
+        </a>      
         <div class="container">
-          <a href="" class="brand-logo">PsySite</a>
-          <a href="" class="sidenav-trigger" data-target="mobile-menu">
-            <i class="material-icons">menu</i>
-          </a>
-          <ul class="right hide-on-med-and-down">
-            <li> <a href="#" class = "gray-text left">Home</a></li>
-            <li><a href="#" class="gray-text modal-trigger right" data-target = "modal-account">Account Details</a></li>
-            <li><a href="#" class = "gray-text" id = "logout"> Log Out</a></li>
-          </ul>
-          <ul class="sidenav grey lighten-3" id = "mobile-menu">
-            <li><a href="#" class = "gray-text" id = "logout"> Log Out</a></li>
-          </ul>
+          <a href="#!" class="brand-logo">PsySite</a>
         </div>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#!" class = "dropdown-trigger" data-target="lang_dropdown" ><i class="material-icons left">view_module</i>Select Language</a></li>
+          <li><a href="#!" class = "dropdown-trigger" data-target="user_dropdown" ><i class="material-icons left" style = "widows: 300px;">person</i>View Profile Settings</a></li>
+          
+        </ul> 
       </nav>
+    </div>
+    <!-- NAVBAR -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="/assets/paralblue.jpg" alt="">
+      </div>
+    </div>
+    <!--TABLES SECTION-->
+    <section class="container section" id = "services">
+      <div class="row">
+        <div class="col s24 l12">
+          <ul class="tabs">
+            <li class="tab col s4">
+              <a href="#my-tests" class="indigo-text text-darken-4">
+                My Tests
+              </a>
+            </li>
+            <li class="tab col s4">
+              <a href="#my-appointments" class="indigo-text text-darken-4">
+                My Appointments
+              </a>
+            </li>
+            <li class="tab col s4">
+              <a href="#my-other" class="indigo-text text-darken-4">
+                My Other
+              </a>
+            </li>
+          </ul>
+          <div class="col s12" id = "my-tests">
+            <p class="flow-text indigo-text text-darken-4"> My Tests</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+          </div>
+          <div class="col s12" id = "my-appointments">
+            <p class="flow-text indigo-text text-darken-4"> My Appointments</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+          </div>
+          <div class="col s12" id = "my-other">
+            <p class="flow-text indigo-text text-darken-4"> My Other</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+          </div>    
+        </div>
+      </div>
+    </section>
+    <!--PARALLAX-->
+
+    
+    <!-- PROFILE SLIDES-->
+     <!--MOBILE MENU -->
+     <ul class="sidenav grey lighten-3" id = "mobile-menu">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="assets/freud2.png">
+        </div>
+        <a href="#user"><img class="circle tiny" src="assets/img_avatar.png"></a>
+        <a href="#name"><span class="white-text name">John Doe</span></a>
+        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+      </div></li>
+      <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+      <li><a href="#!">Second Link</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Subheader</a></li>
+      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+     <!--LANGUAGE DROPDOWN-->
+    <ul id="lang_dropdown" class="dropdown-content" class="lang-drop" tabindex="0" style ="top:64px">
+      <li tabindex="0">
+        <a href="#!" class="grey-text text-darken-1">
+        <i class="flag-icon flag-icon-gb"></i> English</a>
+      </li>
+      <li tabindex="0">
+        <a href="#!" class="grey-text text-darken-1">
+        <i class="flag-icon flag-icon-fr"></i> French</a>
+      </li>
+      <li tabindex="0">
+        <a href="#!" class="grey-text text-darken-1">
+        <i class="flag-icon flag-icon-es"></i> Spanish</a>
+      </li>
+      <li tabindex="0">
+        <a href="#!" class="grey-text text-darken-1">
+        <i class="flag-icon flag-icon-de"></i> German</a>
+      </li>
+    </ul>
+    <!--USER MENU -->
+    <ul id="user_dropdown" class="mailbox dropdown-content dropdown-user"  >
+      <li tabindex="0">
+      </li>
+      <li role="separator" class="divider" tabindex="0"></li>
+      <li tabindex="0"><a href="#" style="color:#1a237e;" ><i class="material-icons" style="color:#1a237e;">account_circle</i> My Profile</a></li>
+      <li tabindex="0"><a href="#" style="color:#1a237e;" ><i class="material-icons">inbox</i> Inbox</a></li>
+      <li tabindex="0"><a href="#" style="color:#1a237e;"><i class="material-icons" style="color:#1a237e;" >account_balance_wallet</i> My Results</a></li>
+     
+      <li role="separator" class="divider" tabindex="0"></li>
+      <li tabindex="0"><a href="#" style="color:#1a237e;" ><i class="material-icons" style="color:#1a237e;">settings</i> Account Setting</a></li>
+      <li role="separator" class="divider" tabindex="0" style="color:#1a237e;" ></li>
+      <li tabindex="0"><a href="#" style="color:#1a237e;"><i class="material-icons">power_settings_new</i> Logout</a></li>
+    </ul>
 
 
 
@@ -50,10 +169,16 @@
   <!-- Compiled and minified JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="scripts/authent.js"></script>
+  <script src="scripts/popup.js"></script>
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	
+  
   <script>
     $(document).ready(function(){
       $('.sidenav').sidenav();
+      $('.dropdown-trigger').dropdown();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
     });
   </script>
   <script>
