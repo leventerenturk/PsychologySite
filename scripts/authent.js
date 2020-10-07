@@ -18,10 +18,11 @@ function googleLogin(){
 authent.onAuthStateChanged(user => {
     if(user){
         console.log("user logged in:",user);
-        //window.location = 'userPage.html';
+        window.location = 'userPage.html';
     }
     else{
         console.log("User has logged out");
+        //window.location = 'introPage.html';
     }
     
 })

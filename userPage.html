@@ -179,10 +179,59 @@
       <img src="/assets/purppar.jpg" alt="">
     </div>
   </div>
-<!-- SETTINGS/BANK SECTION -->
-<section class = "settings secton">
+<!-- BLOG SECTION -->
+<section class = "blog secton">
+
   <div class="row">
-    <h1> Settings Menu</h1>
+    <div class="container">
+
+      <div class="item mb-5">
+        <div class="media">
+          <div class="row l4">
+            <img src="assets/city.jpg" alt="" class="responsive-img tiny materialboxed">
+          </div>
+          <div class="media-body">
+            <h3 class="title mb-1"><a href="blog-post.html">A Guide to Becoming a Full-Stack Developer</a></h3>
+            <div class="meta mb-1"><span class="date">Published 3 months ago</span><span class="time">3 min read</span><span class="comment"><a href="#">26 comments</a></span></div>
+            <div class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies...</div>
+            <a class="more-link" href="blog-post.html">Read more →</a>
+          </div><!--//media-body-->
+        </div><!--//media-->
+      </div><!--//item-->
+      
+      <div class="item mb-5">
+        <div class="media">
+          <div class="row l4">
+            <img src="assets/city.jpg" alt="" class="responsive-img materialboxed">
+          </div>
+          <div class="media-body">
+            <h3 class="title mb-1"><a href="blog-post.html">A Guide to Becoming a Full-Stack Developer</a></h3>
+            <div class="meta mb-1"><span class="date">Published 3 months ago</span><span class="time">3 min read</span><span class="comment"><a href="#">26 comments</a></span></div>
+            <div class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies...</div>
+            <a class="more-link" href="blog-post.html">Read more →</a>
+          </div><!--//media-body-->
+        </div><!--//media-->
+      </div><!--//item-->
+      
+      <div class="item mb-5">
+        <div class="media">
+          <div class="row s12 l4">
+            <img src="assets/freud2.png" alt="" class="responsive-img">
+          </div>
+          <div class="media-body">
+            <h3 class="title mb-1"><a href="blog-post.html">High Performance JavaScript</a></h3>
+            <div class="meta mb-1"><span class="date">Published 1 month ago</span><span class="time">8 min read</span><span class="comment"><a href="#">12 comments</a></span></div>
+            <div class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies...</div>
+            <a class="more-link" href="blog-post.html">Read more →</a>
+          </div><!--//media-body-->
+        </div><!--//media-->
+      </div><!--//item-->
+    
+        <a class="w3-left waves-effect waves-light btn red">❮ Previous</a>
+        <a class="w3-right waves-effect waves-light btn red">Next ❯</a>
+      
+   
+    </div>
   </div>
 
 </section>
@@ -276,7 +325,10 @@
       <li role="separator" class="divider" tabindex="0"></li>
       <li tabindex="0"><a href="#" style="color:#1a237e;" ><i class="material-icons" style="color:#1a237e;">settings</i> Account Setting</a></li>
       <li role="separator" class="divider" tabindex="0" style="color:#1a237e;" ></li>
-      <li tabindex="0"><a href="#" style="color:#1a237e;"><i class="material-icons">power_settings_new</i> Logout</a></li>
+      
+      <li tabindex="0"><a href="#" style="color:#1a237e;" id = "logout-form"><i class="material-icons">power_settings_new</i> Logout</a></li>
+      
+      
     </ul>
     <!-- PROFILE SLIDES-->
 
@@ -290,6 +342,47 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="scripts/popup.js"></script>
   <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <script src = "scripts/logout.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBhLYrV3DtA_8bk3kn7nEtNUbtk0SR0mhQ",
+    authDomain: "psychologyprototype-d2930.firebaseapp.com",
+    databaseURL: "https://psychologyprototype-d2930.firebaseio.com",
+    projectId: "psychologyprototype-d2930",
+    storageBucket: "psychologyprototype-d2930.appspot.com",
+    messagingSenderId: "56440645435",
+    appId: "1:56440645435:web:fde1b2f9fff9a0a20c391e",
+    measurementId: "G-3ZW2081Y1J"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  //auth
+  const authent = firebase.auth();
+  const db = firebase.firestore();
+
+
+
+
+</script>
+
+
+
+
 	
   
   <script>
