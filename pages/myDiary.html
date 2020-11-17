@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> My Diary </title>
+    
+        <link rel="stylesheet" href="usrstyles.css">
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- fa-fa -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!--FLAG ICONS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+        <script>
+            var slider = document.getElementById("myRange");
+            var output = document.getElementById("demo");
+            output.innerHTML = slider.value;
+    
+            slider.oninput = function() {
+            output.innerHTML = this.value;
+            }
+        </script>
+        <style>
+            
+            .question-answer label {
+              display: block;
+              }
+
+        </style>  
+    </head>
+    <body>
+      
+        <!--NAVBAR-->
+        <div class ="header">
+            <nav class="nav-wrapper blue lighten-1">
+              <a href="" class="sidenav-trigger show-on-large " data-target="mobile-menu">
+                <i class="material-icons">person</i>
+              </a>
+              <a href="" class="sidenav-trigger right">
+                <i class="material-icons">view_module</i>
+              </a>
+              <a href="" class="sidenav-trigger right">
+                <i class="material-icons">search</i>
+              </a>      
+              <div class="container">
+                <a href="#!" class="brand-logo">PsySite</a>
+              </div>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="#!" class = "dropdown-trigger" data-target="lang_dropdown" ><i class="material-icons left">view_module</i>Select Language</a></li>
+                <li><a href="#!" class = "dropdown-trigger" data-target="user_dropdown" ><i class="material-icons left" style = "widows: 300px;">person</i>View Profile Settings</a></li>          
+              </ul> 
+            </nav>
+          </div>
+          <!--HAPPINESS SECTION-->
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons blue-text">filter_drama</i><h4 class="blue-text center">On a scale from 0 to 100, how happy are you?</h4></div>
+              <div class="collapsible-body">
+                <form action="#">
+                  <p class="range-field">
+                    <input type="range" min="1" max="100" id="myRange">
+                    <span id="demo" class = "teal-text"></span></p>
+                </form>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons blue-text">place</i>
+                <h4 class = "blue-text">Why do you feel like this? Is there a particular event that is causing this?</h4>
+              </div>
+              <div class="collapsible-body">
+                <div class="testbox container">
+                  <form>
+                    <div class>
+                      <textarea class="teal-text" style="height:120px"></textarea>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons blue-text">place</i>
+                <h4 class = "blue-text">Do you feel like this often? If yes, what are the usual events that are making you feel like this?</h4>
+              </div>
+              <div class="collapsible-body">
+                <div class="testbox container">
+                  <form>
+                    <div class>
+                      <textarea class="teal-text" style="height:120px"></textarea>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <!--PARALLAX-->
+          <div class="parallax-container">
+            <div class="parallax">
+              <img src="../assets/paralblue.jpg" alt="" class="responsive-img">
+            </div>
+          </div>
+          <!--SINCE THEN SECTION-->
+          <ul class="collapsible popup">
+            <li>
+              <div class="collapsible-header blue-text"><i class="material-icons ">filter_drama</i>
+                <h4 class = "blue-text">Since your last entry to the journal, what is different now?</h4>
+              </div>
+              <div class="collapsible-body">
+                <div class="row">
+                  <form class="col s12">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea teal-text"></textarea>
+                        <label for="textarea1">Textarea</label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons blue-text">place</i>
+                <h4 class = "blue-text">Do you think these changes are positive or negative? If so, why do you think like this?</h4>
+              </div>
+              <div class="collapsible-body">
+                <div class="testbox container">
+                  <form>
+                    <div class>
+                      <textarea class="teal-text" style="height:120px"></textarea>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons blue-text">whatshot</i>
+                <h4 class = "blue-text">What factor do you want to be different next time you update your journal? What do you want to change? Why?</h4>
+              </div>
+              <div class="collapsible-body">
+                <div class="testbox container">
+                  <form>
+                    <div class>
+                      <textarea class="teal-text" style="height:120px"></textarea>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!--PARALLAX-->
+          <div class="parallax-container">
+            <div class="parallax">
+              <img src="../assets/freud2.png" alt="" class="responsive-img">
+            </div>
+          </div>
+          <!--FINAL YES/NO AND SUBMIT SECTION-->
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons blue-text">filter_drama</i><h4 class="blue-text">These are important yes/no questions</h4></div>
+              <div class="collapsible-body">
+                <div class="testbox container">
+                  <form>
+                    <div class="container">
+                      <h4 class="center blue-text lighten-1">Do you feel this way often?</h4>
+                      <div class="question-answer container center">
+                        <label><input name="group1" type="radio" /><span>Yes</span></label>
+                        <label><input name="group1" type="radio" /><span>No</span></label>
+                      </div>     
+                    </div>
+                  </form>
+                  <form>
+                    <div class="container">
+                      <h4 class="center blue-text lighten-1">Does 2+2=5?</h4>
+                      <div class="question-answer container center">
+                        <label><input name="group1" type="radio" /><span>Yes</span></label>
+                        <label><input name="group1" type="radio" /><span>No</span></label>
+                      </div>     
+                    </div>
+                  </form>
+                </div>  
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons blue-text">place</i>
+                <h4 class="blue-text">These are the multiple choice questions</h4>
+              </div>
+              <div class="collapsible-body">
+                <div class="testbox container">
+                  <form>
+                    <div class="container">
+                      <h4 class="center blue-text lighten-1">How often do you meet in person with teachers at your child's school?</h4>
+                      <div class="question-answer container">
+                        <label><input name="group1" type="radio" /><span>Almost never</span></label>
+                        <label><input name="group1" type="radio" /><span>Once or twice per year</span></label>
+                        <label><input name="group1" type="radio" /><span>Every few months</span></label>
+                        <label><input name="group1" type="radio" /><span>Monthly</span></label>
+                        <label><input name="group1" type="radio" /><span>Weekly or more</span></label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="testbox container">
+                  <form>
+                    <div class="container">
+                      <h4 class="center blue-text lighten-1">How often do you meet in person with teachers at your child's school?</h4>
+                      <div class="question-answer container">
+                        <label><input name="group1" type="radio" /><span>Almost never</span></label>
+                        <label><input name="group1" type="radio" /><span>Once or twice per year</span></label>
+                        <label><input name="group1" type="radio" /><span>Every few months</span></label>
+                        <label><input name="group1" type="radio" /><span>Monthly</span></label>
+                        <label><input name="group1" type="radio" /><span>Weekly or more</span></label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons blue-text">whatshot</i><h4 class="blue-text">Submit your answers</h4></div>
+              <div class="collapsible-body center"><button class= "btn-large waves-effect waves-light blue">Submit</button></div>
+            </li>
+          </ul>
+          <!--PARALLAX-->
+          <div class="parallax-container">
+            <div class="parallax">
+              <img src="../assets/purppar.jpg" alt="" class="responsive-img">
+            </div>
+          </div>
+          <!--FOOTER-->
+          <footer class="page-footer grey darken-3">
+            <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                <h5>About</h5>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                <h2>Connect Us</h2>
+                <li>
+                    <a href="" class="grey-text text-lighten-3"> Facebook </a>
+                    <a href="#" class="pl-0 pr-3"><span class="fa fa-facebook"></span></a>
+                </li>
+                <li>
+                <a href="" class="grey-text text-lighten-3"> Twitter </a>
+                <a href="#" class="pl-0 pr-3"><span class="fa fa-twitter"></span></a>
+                </li>
+                <li>
+                <a href="" class="grey-text text-lighten-3"> LinkedIn </a>
+                <a href="#" class="pl-0 pr-3"><span class="fa fa-linkedin"></span></a>
+                </li>
+                <li>
+                <a href="" class="grey-text text-lighten-3"> GitHub </a>
+                <a href="#" class="pl-0 pr-3"><span class="fa fa-github"></span></a>
+            </li>
+                </div>
+            </div>
+            </div>
+            <div class="footer-copyright grey darken-4">
+            <div class="container center-align"> PsySite</div>
+            </div>
+           </footer>
+           <!--SCRIPTS-->
+                      <!-- Compiled and minified JavaScript -->
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+           <script>
+              (function($){
+                $(function(){
+
+                    $('.collapsible').collapsible();
+                    $('.parallax').parallax();
+
+                }); // end of document ready
+                })(jQuery); 
+
+           </script>
+
+    </body>
+</html>

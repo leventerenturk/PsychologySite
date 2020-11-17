@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> User Page </title>
+    
+    <link rel="stylesheet" href="usrstyles.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- fa-fa -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.2/nouislider.css">
+    <!--FLAG ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    
+    <style>
+
+      .section{
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+      }
+      .tabs .indicator{
+        background-color: #1a237e;
+      }
+      .tabs .tab a:focus, .tabs .tab a:focus.active{
+         background: transparent;
+      }
+      .user-dropdown{
+          width:300px;
+      }
+      form, input, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 16px;
+      color: #666;
+      line-height: 28px;
+      }
+      .testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+      padding: 3px;
+      }
+      form {
+      width: 100%;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 2px 5px #ccc; 
+      }
+      input {
+      width: auto;
+      margin-right: 15px;
+      vertical-align: middle;
+      }
+      .question-answer label {
+      display: block;
+      }
+      .th,td{
+        width: 11%;
+      }
+      .first-col{
+        width: 23%;
+      }
+      input {
+      width: calc(100% - 10px);
+      padding: 5px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      vertical-align: middle;
+      }
+     
+    
+      
+
+    </style>
+    
+  </head>
+
+  <body>
+    <!--NAVBAR-->
+    <div class ="header">
+      <nav class="nav-wrapper blue lighten-1">
+        <a href="" class="sidenav-trigger show-on-large " data-target="mobile-menu">
+          <i class="material-icons">person</i>
+        </a>
+        <a href="" class="sidenav-trigger right">
+          <i class="material-icons">view_module</i>
+        </a>
+        <a href="" class="sidenav-trigger right">
+          <i class="material-icons">search</i>
+        </a>      
+        <div class="container">
+          <a href="#!" class="brand-logo">PsySite</a>
+        </div>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#!" class = "dropdown-trigger" data-target="lang_dropdown" ><i class="material-icons left">view_module</i>Select Language</a></li>
+          <li><a href="#!" class = "dropdown-trigger" data-target="user_dropdown" ><i class="material-icons left" style = "widows: 300px;">person</i>View Profile Settings</a></li>          
+        </ul> 
+      </nav>
+    </div>
+    <!-- NAVBAR -->
+    <!--TESTBOX-->
+    <h1 class = "center blue-text lighten-1">Your Diary</h1>
+    <h3 class = "center blue-text"> The collectivist questions </h3>
+    <div class="testbox container">
+
+      <form>
+        <div class="container">
+          <h4 class="center blue-text lighten-1">How often do you meet in person with teachers at your child's school?</h4>
+          <div class="question-answer container">
+            <label><input name="group1" type="radio" /><span>Almost never</span></label>
+            <label><input name="group1" type="radio" /><span>Once or twice per year</span></label>
+            <label><input name="group1" type="radio" /><span>Every few months</span></label>
+            <label><input name="group1" type="radio" /><span>Monthly</span></label>
+            <label><input name="group1" type="radio" /><span>Weekly or more</span></label>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="testbox container">
+      <form>
+        <div class="container">
+          <h4 class="center blue-text lighten-1">How often do you meet in person with teachers at your child's school?</h4>
+          <div class="question-answer container">
+            <label><input name="group1" type="radio" /><span>Almost never</span></label>
+            <label><input name="group1" type="radio" /><span>Once or twice per year</span></label>
+            <label><input name="group1" type="radio" /><span>Every few months</span></label>
+            <label><input name="group1" type="radio" /><span>Monthly</span></label>
+            <label><input name="group1" type="radio" /><span>Weekly or more</span></label>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="testbox container">
+      <form>
+        <div class>
+          <h4 class = "blue-text">What do you like about the product / service?</h4>
+          <textarea class="teal-text" style="height:120px" ></textarea>
+        </div>
+      </form>
+    </div>
+
+    <div class="testbox container">
+      <form>
+        <div class="container">
+          <table>
+            <tr>
+              <th class="first-col"></th>
+              <th class="blue-text">Strongly Disagree</th>
+              <th class="blue-text">Disagree</th>
+              <th class="blue-text">Neutral</th>
+              <th class="blue-text">Agree</th>
+              <th class="blue-text">Strongly Agree</th>
+            </tr>
+            <tr>
+              <td class="first-col">1.I often than not, feel happy.</td>
+              <td><label><input class="with-gap" name="group1" type="radio"/><span></span></label></td>
+              <td><label><input class="with-gap" name="group1" type="radio"/><span></span></label></td>
+              <td><label><input class="with-gap" name="group1" type="radio"/><span></span></label></td>
+              <td><label><input class="with-gap" name="group1" type="radio"/><span></span></label></td>
+              <td><label><input class="with-gap" name="group1" type="radio"/><span></span></label></td>
+            </tr>
+            <tr>
+              <td class="first-col">2. I don't like doing certain things just in order to do them</td>
+              <td><label><input class="with-gap" name="group2" type="radio"/><span></span></label></td>
+              <td><label><input class="with-gap" name="group2" type="radio"/><span></span></label></td>
+              <td><label><input class="with-gap" name="group2" type="radio"/><span></span></label></td>
+              <td><label><input class="with-gap" name="group2" type="radio"/><span></span></label></td>
+              <td><label><input class="with-gap" name="group2" type="radio"/><span></span></label></td>
+            </tr>
+            <tr>
+              <td class="first-col">3. This question was sooo long, i did not even read it and just moved on to the 4th question asdasdasdas.</td>
+              <td><label><input class="with-gap" name="group3" type="radio"/><span></span></label></td>
+              <td><label><input class="with-gap" name="group3" type="radio"/><span></span></label></td>
+              <td><label><input class="with-gap" name="group3" type="radio"/><span></span></label></td>
+              <td><label><input class="with-gap" name="group3" type="radio"/><span></span></label></td>
+              <td><label><input class="with-gap" name="group3" type="radio"/><span></span></label></td>
+            </tr>
+          </table>
+        </div>
+      </form>
+    </div>
+
+    <div class="testbox container">
+      <form>
+        <div class>
+          <h4 class = "blue-text">What do you like about the product / service?</h4>
+          <textarea class="teal-text" style="height:120px"></textarea>
+        </div>
+      </form>
+    </div>
+
+  
+    <div class="testbox container">
+      <form>
+        <div class="container">
+          <h4 class="center blue-text lighten-1">Do you feel this way often?</h4>
+          <div class="question-answer container center">
+            <label><input name="group1" type="radio" /><span>Yes</span></label>
+            <label><input name="group1" type="radio" /><span>No</span></label>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="testbox container">
+        <form action="#">
+          <h4 class="blue-text center">On a scale from 0 to 100, how happy are you?</h4>
+          <p class="range-field">
+            <input type="range" min="1" max="100" id="myRange">
+            <span id="demo" class = "teal-text"></span></p>
+        </form>
+    </div>
+
+   
+
+
+
+    
+    <script>
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      output.innerHTML = slider.value;
+
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+      }
+    </script>
+  
+  </body>
+
+</html>

@@ -17,6 +17,7 @@ function googleLogin(){
 //listen fo authentication status change
 authent.onAuthStateChanged(user => {
     if(user){
+        window.alert('User has signed in');
         console.log("user logged in:",user);
         window.location = 'userPage.html';
     }
@@ -46,17 +47,7 @@ signupform.addEventListener('submit',(e) => {
 
 });
 
-
-//Logout
-const logout = document.querySelector('#logout')
-logout.addEventListener('click', (e) => {
-    e.preventDefault();
-    authent.signOut().then(() => {
-        window.alert('User has signed out');
-        console.log("User has signed Out");
-        //window.location = 'introPage.html';
-    });
-});
+//Logout form( Just in case)
 
 
 //Login
