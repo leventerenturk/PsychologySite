@@ -20,6 +20,14 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+                   
+        
+        <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
 
         <script>
             var slider = document.getElementById("myRange");
@@ -79,10 +87,12 @@
               </div>
               <div class="collapsible-body">
                 <div class="testbox container">
-                  <form>
+                  <form id="add-why">
                     <div class>
-                      <textarea class="teal-text" style="height:120px"></textarea>
+                      <textarea class="teal-text" style="height:120px" name="whyFeelThis" placeholder="whyFeelThis"></textarea>
+                      <button class= "btn-large waves-effect waves-light blue">Submit</button>
                     </div>
+
                   </form>
                 </div>
               </div>
@@ -95,7 +105,7 @@
                 <div class="testbox container">
                   <form>
                     <div class>
-                      <textarea class="teal-text" style="height:120px"></textarea>
+                      <textarea class="teal-text" style="height:120px" name="feel-this-often" placeholder="feelThisOften"></textarea>
                     </div>
                   </form>
                 </div>
@@ -120,7 +130,7 @@
                   <form class="col s12">
                     <div class="row">
                       <div class="input-field col s12">
-                        <textarea id="textarea1" class="materialize-textarea teal-text"></textarea>
+                        <textarea id="textarea1" class="materialize-textarea teal-text" name="different_since_last" placeholder="differentSinceLast"></textarea>
                         <label for="textarea1">Textarea</label>
                       </div>
                     </div>
@@ -136,7 +146,7 @@
                 <div class="testbox container">
                   <form>
                     <div class>
-                      <textarea class="teal-text" style="height:120px"></textarea>
+                      <textarea class="teal-text" style="height:120px" name="change_pos_neg" placeholder="changePosNeg"></textarea>
                     </div>
                   </form>
                 </div>
@@ -150,7 +160,7 @@
                 <div class="testbox container">
                   <form>
                     <div class>
-                      <textarea class="teal-text" style="height:120px"></textarea>
+                      <textarea class="teal-text" style="height:120px" name="what_to_change" placeholder="whatToChange"></textarea>
                     </div>
                   </form>
                 </div>
@@ -270,9 +280,10 @@
             </div>
            </footer>
            <!--SCRIPTS-->
-                      <!-- Compiled and minified JavaScript -->
+            <!-- Compiled and minified JavaScript -->
             <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
            <script>
               (function($){
                 $(function(){
@@ -284,6 +295,30 @@
                 })(jQuery); 
 
            </script>
+           <!----FIREBASE----->
+
+
+            <script>
+              // Your web app's Firebase configuration
+              // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+              var firebaseConfig = {
+                apiKey: "AIzaSyBhLYrV3DtA_8bk3kn7nEtNUbtk0SR0mhQ",
+                authDomain: "psychologyprototype-d2930.firebaseapp.com",
+                databaseURL: "https://psychologyprototype-d2930.firebaseio.com",
+                projectId: "psychologyprototype-d2930",
+                storageBucket: "psychologyprototype-d2930.appspot.com",
+                messagingSenderId: "56440645435",
+                appId: "1:56440645435:web:fde1b2f9fff9a0a20c391e",
+                measurementId: "G-3ZW2081Y1J"
+              };
+              // Initialize Firebase
+              firebase.initializeApp(firebaseConfig);
+              const db = firebase.firestore();
+              db.settings({timestampsInSnapshots:true});
+              //firebase.analytics();
+            </script>
+            <script src = "dbconnect.js"></script>
+
 
     </body>
 </html>
