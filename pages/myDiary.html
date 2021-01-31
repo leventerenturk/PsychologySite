@@ -68,178 +68,63 @@
                 <li><a href="#!" class = "dropdown-trigger" data-target="user_dropdown" ><i class="material-icons left" style = "widows: 300px;">person</i>View Profile Settings</a></li>          
               </ul> 
             </nav>
-          </div>
-          <!--HAPPINESS SECTION-->
-          <ul class="collapsible">
-            <li>
-              <div class="collapsible-header"><i class="material-icons blue-text">filter_drama</i><h4 class="blue-text center">On a scale from 0 to 100, how happy are you?</h4></div>
-              <div class="collapsible-body">
-                <form action="#">
-                  <p class="range-field">
-                    <input type="range" min="1" max="100" id="myRange">
-                    <span id="demo" class = "teal-text"></span></p>
-                </form>
-              </div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons blue-text">place</i>
-                <h4 class = "blue-text">Why do you feel like this? Is there a particular event that is causing this?</h4>
-              </div>
-              <div class="collapsible-body">
-                <div class="testbox container">
-                  <form id="add-why">
-                    <div class>
-                      <textarea class="teal-text" style="height:120px" name="whyFeelThis" placeholder="whyFeelThis"></textarea>
-                      <button class= "btn-large waves-effect waves-light blue">Submit</button>
-                    </div>
+        </div>
+        <!--HAPPINESS SECTION-->
+        <div class="container">
+            <form id="form">
 
-                  </form>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons blue-text">place</i>
-                <h4 class = "blue-text">Do you feel like this often? If yes, what are the usual events that are making you feel like this?</h4>
-              </div>
-              <div class="collapsible-body">
-                <div class="testbox container">
-                  <form>
-                    <div class>
-                      <textarea class="teal-text" style="height:120px" name="feel-this-often" placeholder="feelThisOften"></textarea>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </li>
-          </ul>
+                <hr>
+                <h2 class="blue-text center">Part 1: Opening Up Feelings and Recent Events</h2>
+                <hr>
 
-          <!--PARALLAX-->
-          <div class="parallax-container">
-            <div class="parallax">
-              <img src="../assets/paralblue.jpg" alt="" class="responsive-img">
-            </div>
-          </div>
-          <!--SINCE THEN SECTION-->
-          <ul class="collapsible popup">
-            <li>
-              <div class="collapsible-header blue-text"><i class="material-icons ">filter_drama</i>
-                <h4 class = "blue-text">Since your last entry to the journal, what is different now?</h4>
-              </div>
-              <div class="collapsible-body">
-                <div class="row">
-                  <form class="col s12">
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <textarea id="textarea1" class="materialize-textarea teal-text" name="different_since_last" placeholder="differentSinceLast"></textarea>
-                        <label for="textarea1">Textarea</label>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons blue-text">place</i>
-                <h4 class = "blue-text">Do you think these changes are positive or negative? If so, why do you think like this?</h4>
-              </div>
-              <div class="collapsible-body">
                 <div class="testbox container">
-                  <form>
-                    <div class>
-                      <textarea class="teal-text" style="height:120px" name="change_pos_neg" placeholder="changePosNeg"></textarea>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons blue-text">whatshot</i>
-                <h4 class = "blue-text">What factor do you want to be different next time you update your journal? What do you want to change? Why?</h4>
-              </div>
-              <div class="collapsible-body">
-                <div class="testbox container">
-                  <form>
-                    <div class>
-                      <textarea class="teal-text" style="height:120px" name="what_to_change" placeholder="whatToChange"></textarea>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <!--PARALLAX-->
-          <div class="parallax-container">
-            <div class="parallax">
-              <img src="../assets/freud2.png" alt="" class="responsive-img">
-            </div>
-          </div>
-          <!--FINAL YES/NO AND SUBMIT SECTION-->
-          <ul class="collapsible">
-            <li>
-              <div class="collapsible-header"><i class="material-icons blue-text">filter_drama</i><h4 class="blue-text">These are important yes/no questions</h4></div>
-              <div class="collapsible-body">
-                <div class="testbox container">
-                  <form>
-                    <div class="container">
-                      <h4 class="center blue-text lighten-1">Do you feel this way often?</h4>
-                      <div class="question-answer container center">
-                        <label><input name="group1" type="radio" /><span>Yes</span></label>
-                        <label><input name="group1" type="radio" /><span>No</span></label>
-                      </div>     
-                    </div>
-                  </form>
-                  <form>
-                    <div class="container">
-                      <h4 class="center blue-text lighten-1">Does 2+2=5?</h4>
-                      <div class="question-answer container center">
-                        <label><input name="group1" type="radio" /><span>Yes</span></label>
-                        <label><input name="group1" type="radio" /><span>No</span></label>
-                      </div>     
-                    </div>
-                  </form>
-                </div>  
-              </div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons blue-text">place</i>
-                <h4 class="blue-text">These are the multiple choice questions</h4>
-              </div>
-              <div class="collapsible-body">
-                <div class="testbox container">
-                  <form>
-                    <div class="container">
-                      <h4 class="center blue-text lighten-1">How often do you meet in person with teachers at your child's school?</h4>
-                      <div class="question-answer container">
-                        <label><input name="group1" type="radio" /><span>Almost never</span></label>
-                        <label><input name="group1" type="radio" /><span>Once or twice per year</span></label>
-                        <label><input name="group1" type="radio" /><span>Every few months</span></label>
-                        <label><input name="group1" type="radio" /><span>Monthly</span></label>
-                        <label><input name="group1" type="radio" /><span>Weekly or more</span></label>
-                      </div>
-                    </div>
-                  </form>
+                  <div><h4 class = "blue-text">1.Why do you feel like this? Is there a particular event that is causing this?</h4></div>
+                  <hr>
+                  <div class><textarea class="teal-text" style="height:120px" name="whyFeelThis" placeholder="Why do you feel like this?"></textarea></div>
+                  <hr>
                 </div>
                 <div class="testbox container">
-                  <form>
-                    <div class="container">
-                      <h4 class="center blue-text lighten-1">How often do you meet in person with teachers at your child's school?</h4>
-                      <div class="question-answer container">
-                        <label><input name="group1" type="radio" /><span>Almost never</span></label>
-                        <label><input name="group1" type="radio" /><span>Once or twice per year</span></label>
-                        <label><input name="group1" type="radio" /><span>Every few months</span></label>
-                        <label><input name="group1" type="radio" /><span>Monthly</span></label>
-                        <label><input name="group1" type="radio" /><span>Weekly or more</span></label>
-                      </div>
-                    </div>
-                  </form>
+                  <div><h4 class = "blue-text">2.Do you feel like this often? If yes, what are the usual events that are making you feel like this?</h4></div>
+                  <hr>
+                  <div class><textarea class="teal-text" style="height:120px" name="feelThisOften" placeholder="Do you feel like this often?"></textarea></div>
+                  <hr>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons blue-text">whatshot</i><h4 class="blue-text">Submit your answers</h4></div>
-              <div class="collapsible-body center"><button class= "btn-large waves-effect waves-light blue">Submit</button></div>
-            </li>
-          </ul>
+
+                <hr>
+                <h2 class="blue-text center">Part 2: Identifying the changes</h2>
+                <hr>
+
+                <div class="testbox container">
+                  <div><h4 class = "blue-text">3. Since your last entry to journal, what is different now? How are they different?</h4></div>
+                  <hr>
+                  <div class><textarea class="teal-text" style="height:120px" name="whatChanged" placeholder="Since last journal, what is different and how?"></textarea></div>
+                  <hr>
+                </div>
+                <div class="testbox container">
+                  <div><h4 class = "blue-text">4. Do you identify these changes as positive, or negative? And why do you identify them this way?</h4></div>
+                  <hr>
+                  <div class><textarea class="teal-text" style="height:120px" name="changePosNeg" placeholder="Do you identify these changes as positive, or negative? And why do you identify them this way?"></textarea></div>
+                  <hr>
+                </div>
+                <div class="testbox container">
+                  <div><h4 class = "blue-text">5. What factor do you want to be different next time you update your journal? What do you want to change?</h4></div>
+                  <hr>
+                  <div class><textarea class="teal-text" style="height:120px" name="wantToChange" placeholder="What factor do you want to be different next time you update your journal? What do you want to change?"></textarea></div>
+                  <hr>
+                </div>
+
+                <hr>
+                <h2 class="blue-text center">Part 3: Multiple Answers: How often do you?</h2>
+                <hr>
+
+                <div class="testbox container">
+                  <button class= "btn-large waves-effect waves-light blue">Submit</button>
+                  <hr>
+                </div>
+            </form>
+        </div>
+
+
           <!--PARALLAX-->
           <div class="parallax-container">
             <div class="parallax">

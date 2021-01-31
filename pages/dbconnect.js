@@ -1,10 +1,18 @@
-const why_feel_form = document.querySelector('#add-why');
+const form = document.querySelector('#form');
 
 //Saving Data
-why_feel_form.addEventListener('submit',(e) => {
+form.addEventListener('submit',(e) => {
     e.preventDefault();
     db.collection('myDiary').add({
-        why_feel : why_feel_form.whyFeelThis.value
+        why_feel : form.whyFeelThis.value,
+        feel_often: form.feelThisOften.value,
+        what_changed: form.whatChanged.value,
+        change_pos_neg: form.changePosNeg.value,
+        want_change: form.wantToChange.value
     });
-    why_feel_form.whyFeelThis.value = '';
+    form.whyFeelThis.value = '';
+    form.feelThisOften.value = '';
+    form.whatChanged.value = '';
+    form.changePosNeg.value = '';
+    form.wantToChange.value = '';
 })
