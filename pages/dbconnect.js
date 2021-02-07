@@ -10,9 +10,11 @@ form.addEventListener('submit',(e) => {
         change_pos_neg: form.changePosNeg.value,
         want_change: form.wantToChange.value
     });
-    form.whyFeelThis.value = '';
-    form.feelThisOften.value = '';
-    form.whatChanged.value = '';
-    form.changePosNeg.value = '';
-    form.wantToChange.value = '';
+    //form.whyFeelThis.value = '';
+    //form.feelThisOften.value = '';
+    //form.whatChanged.value = '';
+    //form.changePosNeg.value = '';
+    //form.wantToChange.value = '';
 })
+
+//Getting the Data
