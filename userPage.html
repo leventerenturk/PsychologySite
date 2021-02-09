@@ -166,8 +166,8 @@
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
           </div>
           <div class="col s12" id = "my-other">
-            <p class="flow-text indigo-text text-darken-4"> My Other</p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+            <p class="flow-text indigo-text text-darken-4"> My diary entries </p>
+            <a href = "" id = "diary-list" class = "blue-text"></a>
           </div>    
         </div>
       </div>
@@ -337,13 +337,8 @@
 
   
     
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="scripts/popup.js"></script>
-  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-  <script src = "scripts/logout.js"></script>
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  
+<!-- The core Firebase JS SDK is always required and must be listed first -->
 <!-- Initialize Firebase -->
 <script src="/__/firebase/init.js"></script>
 
@@ -375,10 +370,14 @@
   const authent = firebase.auth();
   const db = firebase.firestore();
 
-
-
-
 </script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="scripts/popup.js"></script>
+<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+<script src = "scripts/logout.js"></script>
+<script src = "scripts/connect.js"></script>
 
 
 
@@ -392,9 +391,6 @@
       $('.parallax').parallax();
       $('.tabs').tabs();
     });
-  </script>
-  <script>
-
   </script>
   </body>
 </html>
