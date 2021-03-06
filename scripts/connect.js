@@ -1,5 +1,5 @@
 //Getting the Data
-const diaryList = document.querySelector('#diary-list');
+const diaryList = document.querySelector('#diarylist');
 // create element and render 
 function renderDiary(doc){
     let li = document.createElement('li');
@@ -34,4 +34,4 @@ form.addEventListener('submit',(e) => {
     //form.whatChanged.value = '';
     //form.changePosNeg.value = '';
     //form.wantToChange.value = '';
-})
+});
