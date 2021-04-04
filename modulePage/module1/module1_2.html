@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> Module 1-2 </title>
+        
+        <link rel="stylesheet" href="usrstyles.css">
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+         <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- fa-fa -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.2/nouislider.css">
+        <!--FLAG ICONS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+
+        
+        <style>
+    
+          .section{
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+          }
+          .tabs .indicator{
+            background-color: #1a237e;
+          }
+          .tabs .tab a:focus, .tabs .tab a:focus.active{
+             background: transparent;
+          }
+          .user-dropdown{
+              width:300px;
+          }
+          form, input, p { 
+          padding: 0;
+          margin: 0;
+          outline: none;
+          font-family: Roboto, Arial, sans-serif;
+          font-size: 16px;
+          color: #666;
+          line-height: 28px;
+          }
+          .testbox {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: inherit;
+          padding: 3px;
+          }
+          form {
+          width: 100%;
+          padding: 20px;
+          background: #fff;
+          box-shadow: 0 2px 5px #ccc; 
+          }
+          input {
+          width: auto;
+          margin-right: 15px;
+          vertical-align: middle;
+          }
+          .question-answer label {
+          display: block;
+          }
+          .th,td{
+            width: 11%;
+          }
+          .first-col{
+            width: 23%;
+          }
+          input {
+          width: calc(100% - 10px);
+          padding: 5px;
+          border-radius: 3px;
+          border: 1px solid #ccc;
+          vertical-align: middle;
+          }
+         
+                    
+        
+          
+    
+        </style>
+        
+      </head>
+
+      <body>
+        <!--NAVBAR-->
+        <div class ="header">
+            <nav class="nav-wrapper blue lighten-1">
+              <a href="" class="sidenav-trigger show-on-large " data-target="mobile-menu">
+                <i class="material-icons">person</i>
+              </a>
+              <a href="" class="sidenav-trigger right">
+                <i class="material-icons">view_module</i>
+              </a>
+              <a href="" class="sidenav-trigger right">
+                <i class="material-icons">search</i>
+              </a>      
+              <div class="container">
+                <a href="#!" class="brand-logo">PsySite</a>
+              </div>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="#!" class = "dropdown-trigger" data-target="lang_dropdown" ><i class="material-icons left">view_module</i>Select Language</a></li>
+                <li><a href="#!" class = "dropdown-trigger" data-target="user_dropdown" ><i class="material-icons left" style = "widows: 300px;">person</i>View Profile Settings</a></li>
+           
+                
+              </ul> 
+            </nav>
+          </div>
+          <!-- NAVBAR -->
+          
+          <!---VIDEO SECTION--->
+          <div class="testbox container">
+            <form >
+              <div class="container">
+                <div class="row center">
+                    <div class="col s12 l6 push-l1">
+                    <iframe width="600" height="415" src="https://www.youtube.com/embed/vkBW7RoGG1Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+              </div>
+            </form>
+          </div>
+          <!----VIDEO SECTION-->
+
+          <!---EMOTIONAL DETECTION--->
+          <div class="testbox container">
+            <form >
+              <div class="container">
+                <div class="row center">
+                    <div class="col s12 l6">
+                        <hr>
+                        <img src="../../assets/faces.jpg" alt="" class="responsive-img">
+                    </div>
+                    <div class="col s12 l6">
+                        <hr>
+                        <h5 class="blue-text">Which face do you think has which emotion? Write them down</h5>
+                        <form action="">
+                            <div class="input-field">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input id="happy" type="text" class="validate">
+                                <label for="happy">happy</label>
+                            </div>
+                            <div class="input-field">
+                              <i class="material-icons prefix">account_circle</i>
+                              <input id="sad" type="text" class="validate">
+                              <label for="sad">sad</label>
+                            </div>
+                            <div class="input-field">
+                              <i class="material-icons prefix">account_circle</i>
+                              <input id="joyful" type="text" class="validate">
+                              <label for="joyful">Joyful</label>
+                            </div>
+                            <div class="input-field">
+                              <i class="material-icons prefix">message</i>
+                              <input id="angry" type="text" class="validate">
+                              <label for="angry">angry</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="material-icons prefix">message</i>
+                                <input id="excited" type="text" class="validate">
+                                <label for="excited">excited</label>
+                            </div>
+                            <div class="input-field">
+                                <i class="material-icons prefix">message</i>
+                                <input id="surprised" type="text" class="validate">
+                                <label for="surprised">surprised</label>
+                            </div>
+                            <div class="input-field center ">
+                              <a class="btn blue">Save</a>
+                            </div>
+                          </form>
+                    </div>
+                </div>
+
+              </div>
+            </form>
+          </div>
+          <!---EMOTIONAL DETECTION--->
+
+          <!--PREVIOUS PAGE AND NEXT PAGE-->
+          <div class="testbox container">
+            <form >
+              <div class="container">
+               
+                <a class="w3-left waves-effect waves-light btn red">❮ Previous</a>
+                <a class="w3-right waves-effect waves-light btn red">Next ❯</a>
+               
+              </div>
+            </form>
+          </div>
+          <!--PREVIOUS PAGE AND NEXT PAGE-->
+
+          <!--FOOTER-->
+          <footer class="page-footer grey darken-3">
+              <div class="container">
+              <div class="row">
+                  <div class="col s12 l6">
+                  <h5>About</h5>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                  </div>
+                  <div class="col s12 l4 offset-l2">
+                  <h2>Connect Us</h2>
+                  <li>
+                      <a href="" class="grey-text text-lighten-3"> Facebook </a>
+                      <a href="#" class="pl-0 pr-3"><span class="fa fa-facebook"></span></a>
+                  </li>
+                  <li>
+                  <a href="" class="grey-text text-lighten-3"> Twitter </a>
+                  <a href="#" class="pl-0 pr-3"><span class="fa fa-twitter"></span></a>
+                  </li>
+                  <li>
+                  <a href="" class="grey-text text-lighten-3"> LinkedIn </a>
+                  <a href="#" class="pl-0 pr-3"><span class="fa fa-linkedin"></span></a>
+                  </li>
+                  <li>
+                  <a href="" class="grey-text text-lighten-3"> GitHub </a>
+                  <a href="#" class="pl-0 pr-3"><span class="fa fa-github"></span></a>
+              </li>
+                  </div>
+              </div>
+              </div>
+              <div class="footer-copyright grey darken-4">
+              <div class="container center-align"> PsySite</div>
+              </div>
+          </footer>
+
+
+          <!--SCRIPTS-->
+          <!-- Compiled and minified JavaScript -->
+          <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+          <script>
+              (function($){
+                      $(function(){
+
+                          $('.collapsible').collapsible();
+                          $('.parallax').parallax();
+
+                      }); // end of document ready
+                      })(jQuery); 
+
+                </script>
+
+      </body>
+
+
+</html>
