@@ -21,6 +21,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        
+        
 
 
         
@@ -119,16 +121,98 @@
           <hr>
           <h2 class="blue-text center"> Part 2: Now Let's Think about Ourselves</h2>
 
-          <!---PICTURE--->
+          <!---SCALES--->
           <div class="testbox container">
             <form class = "form-box" >
               <div class="container">
-                <div class="row center">
+                <div class="row center push-l1">
+                  <h3 class="blue-text"> On a scale from 1 to 100, how much are you afraid of?</h3>
+                  <div class="col s12 l12">
+                    <h3 class="indigo-text"> Heights</h3>
+                    <hr>
+                    <img src="../../assets/heights_scare.jpg" alt="" class="responsive-img">
+                    <hr>
+                    <form action="#">
+                      <p class="range-field">
+                        <input type="range" id="test5" min="0" max="100" />
+                      </p>
+                    </form>
+                  </div>
                 </div>
-
             </form>
             </div>
           </div>
+
+          <div class="testbox container">
+            <form class = "form-box" >
+              <div class="container">
+                <div class="row center push-l1">
+                  <div class="col s12 l12">
+                    <h3 class="indigo-text"> Depths</h3>
+                    <hr>
+                    <img src="../../assets/depth_scare.jpg" alt="" class="responsive-img">
+                    <hr>
+                    <form action="#">
+                      <p class="range-field">
+                        <input type="range" id="test5" min="0" max="100" />
+                      </p>
+                    </form>
+                  </div>
+                </div>
+            </form>
+            </div>
+          </div>
+
+          <div class="testbox container">
+            <form class = "form-box" >
+              <div class="container">
+                <div class="row center push-l1">
+                  <div class="col s12 l12">
+                    <h3 class="indigo-text"> Loneliness</h3>
+                    <hr>
+                    <img src="../../assets/loneliness.jpg" alt="" class="responsive-img">
+                    <hr>
+                    <form action="#">
+                      <p class="range-field">
+                        <input type="range" id="test5" min="0" max="100" />
+                      </p>
+                    </form>
+                  </div>
+                </div>
+            </form>
+            </div>
+          </div>
+
+          <div class="testbox container">
+            <form class = "form-box" >
+              <div class="container">
+                <div class="row center push-l1">
+                  <div class="col s12 l6">
+                    <h3 class="indigo-text"> Failure</h3>
+                    <hr>
+                    <img src="../../assets/loneliness.jpg" alt="" class="responsive-img">
+                    <hr>
+                  </div>
+                  <div class="col s12 l6">
+                    <p>Please adjust the scale.</p>
+                    <hr>
+                    <hr>
+                    <hr>
+                    <hr>
+                    <div class="bottom_card">
+                      <form action="#">
+                        <p class="range-field">
+                          <input type="range" id="test5" min="0" max="100" />
+                        </p>
+                      </form>
+
+                    </div>
+                  </div>
+                </div>
+            </form>
+            </div>
+          </div>
+       
           <!---PICTURE--->
 
           
@@ -185,6 +269,7 @@
           <!-- Compiled and minified JavaScript -->
           <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+          
 
           <script>
               (function($){
@@ -196,8 +281,9 @@
                       }); // end of document ready
                       })(jQuery); 
 
-                </script>
+          </script>
 
+          
       </body>
 
 
